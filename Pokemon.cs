@@ -13,8 +13,13 @@ namespace appPokedex
 			this.Nome = "";
 			this.DataPokemon = "";
 		}
+        public Pokemon(String nome, String dataPokemon)
+        {
+            this.Nome = nome;
+			this.DataPokemon = dataPokemon;
+        }
 
-		private String nome;
+        private String nome;
 
 		public String Nome
 		{
