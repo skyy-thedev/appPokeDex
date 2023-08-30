@@ -8,6 +8,12 @@ namespace appPokedex
 {
     public class Pokedex
     {
+		// CONSTRUCTOR //
+		public Pokedex()
+		{
+			this.InitialList();
+		}
+
 		private List<Pokemon> pokemons;
 
 		public List<Pokemon> Pokemons

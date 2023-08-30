@@ -11,10 +11,10 @@ namespace appPokeDex
     {
         static void Main(string[] args)
         {
-            Pokemon p1 = new Pokemon();
-            Pokemon p = new Pokemon("Bulbasaur", "Bulbasaur is a earth type pokémon.");
-            p.ShowDataPokemon(true);
-            Console.ReadKey();  
+            Pokedex pokedex = new Pokedex();
+            Pokemon p = pokedex.Pokemons[1];
+            p.ShowDataPokemon();
+            Console.ReadKey();
         }
     }
 }
