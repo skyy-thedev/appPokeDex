@@ -8,13 +8,40 @@ namespace appPokedex
 {
     public class Pokemon
     {
+		public Pokemon()
+		{
+			this.Nome = "";
+			this.DataPokemon = "";
+		}
+
 		private String nome;
 
 		public String Nome
 		{
-			get { return nome; }
-			set { nome = value; }
+			get { 
+				return nome; 
+			}
+			set {
+				String texto = value.ToUpper();
+				nome = texto; 
+			}
 		}
+		// DATA DESCRIPTION OF POKEMON //
+		private String dataPokemon; 
 
+		public String DataPokemon
+		{
+			get { return this.dataPokemon; }
+			set {
+				this.dataPokemon = value.ToUpper();
+			}
+		}
+		// METOD - SHOW ALL INFO //
+		public void ShowDataPokemon()
+		{
+			Console.WriteLine("Pokémon name: " + this.Nome);
+			Console.WriteLine("Description:  " + this.DataPokemon);
+
+		}
 	}
 }
