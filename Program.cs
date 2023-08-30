@@ -11,9 +11,8 @@ namespace appPokeDex
     {
         static void Main(string[] args)
         {
-            Pokemon p = new Pokemon();
-            p.Nome = "Bulbasaur";
-            p.DataPokemon = "Bulbasaur is a earth type pokémon.";
+            Pokemon p1 = new Pokemon();
+            Pokemon p = new Pokemon("Bulbasaur", "Bulbasaur is a earth type pokémon.");
             p.ShowDataPokemon(true);
             Console.ReadKey();  
         }
