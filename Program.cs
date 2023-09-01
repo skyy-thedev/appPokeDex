@@ -12,7 +12,7 @@ namespace appPokeDex
         static void Main(string[] args)
         {
             Pokedex pokedex = new Pokedex();
-            Pokemon p = pokedex.Pokemons[1];
+            Pokemon p = pokedex.Pokemons[7];
             p.ShowDataPokemon();
             Console.ReadKey();
         }
