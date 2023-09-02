@@ -28,25 +28,25 @@ namespace appPokedex
         private void InitialList()
         {
             this.pokemons = new List<Pokemon>();
-            Pokemon firePoke = new Pokemon("Charmander", "Charmander is a fire type pokémon.", Pokedex.PokemonType.Fire);
+            Pokemon firePoke = new  ("Charmander", "Charmander is a fire type pokémon.", Pokedex.PokemonType.Fire);
             this.pokemons.Add(firePoke);
-            Pokemon waterPoke = new Pokemon("Squirtle", "Squirtle is a water type pokémon.", Pokedex.PokemonType.Water);
+            Pokemon waterPoke = new  ("Squirtle", "Squirtle is a water type pokémon.", Pokedex.PokemonType.Water);
             this.pokemons.Add(waterPoke);
-            Pokemon electricPoke = new Pokemon("Pikachu", "Pikachu is a electric type pokémon.", Pokedex.PokemonType.Electric);
+            Pokemon electricPoke = new  ("Pikachu", "Pikachu is a electric type pokémon.", Pokedex.PokemonType.Electric);
             this.pokemons.Add(electricPoke);
-            electricPoke = new Pokemon("Raychu", "Raychu is a electric type pokémon and it's an evolve from Pikachu!!", Pokedex.PokemonType.Electric);
+            electricPoke = new  ("Raychu", "Raychu is a electric type pokémon and it's an evolve from Pikachu!!", Pokedex.PokemonType.Electric);
             this.pokemons.Add(electricPoke);
-            firePoke = new Pokemon("Charmeleon", "Charmeleon is a fire type pokémon and it's an evolve from Charmander!!", Pokedex.PokemonType.Fire);
+            firePoke = new  ("Charmeleon", "Charmeleon is a fire type pokémon and it's an evolve from Charmander!!", Pokedex.PokemonType.Fire);
             this.pokemons.Add(firePoke);
-            firePoke = new Pokemon("Charizard", "Charizard is a fire type pokémon and it's an evolve from Charmeleon", Pokedex.PokemonType.Fire);
+            firePoke = new  ("Charizard", "Charizard is a fire type pokémon and it's an evolve from Charmeleon", Pokedex.PokemonType.Fire);
             this.pokemons.Add(firePoke);
-            Pokemon psychicPoke = new Pokemon("Mew", "Mew is a psychic pokémon", Pokedex.PokemonType.Psychic);
+            Pokemon psychicPoke = new  ("Mew", "Mew is a psychic pokémon", Pokedex.PokemonType.Psychic);
             this.pokemons.Add(psychicPoke);
-            psychicPoke = new Pokemon("Mewtwo", "Mewtwo is a psychic pokémon and it's an evolve from Mew!! This pokémon is so dangerous.", Pokedex.PokemonType.Psychic);
+            psychicPoke = new  ("Mewtwo", "Mewtwo is a psychic pokémon and it's an evolve from Mew!! This pokémon is so dangerous.", Pokedex.PokemonType.Psychic);
             this.pokemons.Add(psychicPoke);
-            Pokemon grassPoke = new Pokemon("Caterpie", "Caterpie is a grass type pokémon.", Pokedex.PokemonType.Grass);
+            Pokemon grassPoke = new  ("Caterpie", "Caterpie is a grass type pokémon.", Pokedex.PokemonType.Grass);
             this.pokemons.Add(grassPoke);
-            grassPoke = new Pokemon("Metapod", "Metapod is a grass type pokémon and it's an evolve from Caterpie!", Pokedex.PokemonType.Grass);
+            grassPoke = new ("Metapod", "Metapod is a grass type pokémon and it's an evolve from Caterpie!", Pokedex.PokemonType.Grass);
             this.pokemons.Add(grassPoke);
         }
     }

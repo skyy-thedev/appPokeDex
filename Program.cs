@@ -13,9 +13,8 @@ namespace appPokeDex
         {
             Pokedex pokedex = new Pokedex();
             Pokemon[] pokemons = new Pokemon[200];
-            int tl = 0;
-            int choose = 0;
             Console.WriteLine("Initializing Pokédex.....");
+            int choose = 0;
             //for (int i = 0;  i < 20; i++)
             //{
             //    Console.WriteLine("..."[i]);
@@ -23,12 +22,11 @@ namespace appPokeDex
             try
             {
                 Console.Write("Choose a number:  (0 to 10) ");
-                tl = Convert.ToInt32(Console.ReadLine());
                 choose = Convert.ToInt32(Console.ReadLine());
-                if (tl > 10) tl = 10;
+                if (choose > 10) choose = 10;
             }
             catch {
-                tl = 1;
+                choose = 1;
             }
             Pokemon pokemon = pokedex.Pokemons[choose];
             pokemon.ShowDataPokemon();
