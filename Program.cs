@@ -13,10 +13,11 @@ namespace appPokeDex
         static void Main(string[] args)
         {
             Pokedex pokedex = new Pokedex();
-            int choose = 2;
+            int choose = 100;
             while (choose != 0)
             {
                 choose = Menu();
+                Console.Clear();
                 if (choose == 1)
                 {
                     pokedex.PokemonList();
@@ -41,6 +42,10 @@ namespace appPokeDex
                     {
                         Console.WriteLine("");
                         Console.WriteLine("You Win!");
+                    }
+                    else if (player.Power == pc.Power)
+                    {
+                        Console.WriteLine("IT'S A DRAW!!!");
                     }
                     else
                     {

@@ -64,19 +64,6 @@ namespace appPokedex
             Console.WriteLine("Type: "+ this.Tipo);
 
         }
-        // METOD - SHOW ALL INFO  2//
-        public void ShowDataPokemon(Boolean formated)
-        {
-            if (formated == true)
-            {
-                Console.WriteLine("Pokémon: " + this.Nome + " - " + this.DataPokemon.ToLower());
-            }
-            else
-            {
-                Console.WriteLine("Pokémon name: " + this.Nome);
-                Console.WriteLine("Description:  " + this.DataPokemon);
-                Console.WriteLine("Type: "+ this.Tipo);
-            }
-        }
+
     }
 }
