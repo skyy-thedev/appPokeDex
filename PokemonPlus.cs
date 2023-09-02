@@ -12,9 +12,9 @@ namespace appPokedex
         {
             this.Power = 0;
         }
-        public PokemonPlus(String nome, String dataPokemon, int Power, Pokedex.PokemonType tipo) : base(nome , dataPokemon, tipo)
+        public PokemonPlus(String nome, String dataPokemon, int power, Pokedex.PokemonType tipo) : base(nome , dataPokemon, tipo)
         {
-            this.Power = 0;
+            this.Power = power;
         }
 
         public int Power { get; set; }
@@ -25,6 +25,7 @@ namespace appPokedex
             Console.WriteLine("Description:  " + this.DataPokemon);
             Console.WriteLine("Power: " + this.Power);
             Console.WriteLine("Type: " + this.Tipo);
+            Console.WriteLine("         ");
         }
     }
 }

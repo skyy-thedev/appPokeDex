@@ -54,6 +54,7 @@ namespace appPokedex
         {
             for (int i = 0; i < this.pokemons.Count; i++)
             {
+                Console.WriteLine("Pokémon CODE: " + i);
                 this.Pokemons[i].ShowPokemonDataPlus();
             }
         }

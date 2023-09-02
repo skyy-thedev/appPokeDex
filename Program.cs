@@ -1,6 +1,7 @@
 ﻿using appPokedex;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,25 +13,54 @@ namespace appPokeDex
         static void Main(string[] args)
         {
             Pokedex pokedex = new Pokedex();
-            PokemonPlus[] pokemons = new PokemonPlus[200];
-            Console.WriteLine("Initializing Pokédex.....");
-            int choose = 0;
-            //for (int i = 0;  i < 20; i++)
-            //{
-            //    Console.WriteLine("..."[i]);
-            //}
-            try
+            int choose = 2;
+            while (choose != 0)
             {
-                Console.Write("Choose a number:  (0 to 9) ");
-                choose = Convert.ToInt32(Console.ReadLine());
-                if (choose > 10) choose = 10;
+                choose = Menu();
+                if (choose == 1)
+                {
+                    pokedex.PokemonList();
+                }
+                if (choose == 2)
+                {
+                    // Pokemon choosing //
+                    pokedex.PokemonList();
+                    Console.WriteLine("Choose pokémon by CODE: ");
+                    int CODE = Convert.ToInt32(Console.ReadLine());
+                    // Locking player pokemon //
+                    PokemonPlus player = pokedex.Pokemons[CODE];
+                    // Random PC Pokemon for battle //
+                    Random r = new Random();
+                    CODE = r.Next(0, pokedex.Pokemons.Count);
+                    PokemonPlus pc = pokedex.Pokemons[CODE];
+                    Console.WriteLine(" | " + player.Nome + " | Power: (" + player.Power +")");
+                    Console.WriteLine("          Versus        ");
+                    Console.WriteLine(" | " + pc.Nome + " | Power: ("+ pc.Power +")");
+                    // BATTLE //
+                    if (player.Power > pc.Power)
+                    {
+                        Console.WriteLine("");
+                        Console.WriteLine("You Win!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("You lose!");
+                    }
+
+                }
+
+                Console.ReadKey();
+                Console.Clear();
+                }
             }
-            catch {
-                choose = 1;
-            }
-            PokemonPlus pokemon = pokedex.Pokemons[choose];
-            pokemon.ShowPokemonDataPlus();
-            Console.ReadKey();
+        static int Menu()
+        {
+            Console.WriteLine("Initializing Pokédex........");
+            Console.WriteLine("Press 0 to exit.");
+            Console.WriteLine("Press 1 to Open Pokémon List.");
+            Console.WriteLine("Press 2 for battle!!!");
+            int choose = Convert.ToInt32(Console.ReadLine());
+            return choose;
         }
     }
 }

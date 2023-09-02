@@ -45,7 +45,7 @@ namespace appPokedex
             get { return this.dataPokemon; }
             set
             {
-                this.dataPokemon = value.ToUpper();
+                this.dataPokemon = value.ToLower();
             }
         }
         private PokemonType tipo;
