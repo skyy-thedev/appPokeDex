@@ -36,7 +36,8 @@ namespace appPokeDex
                     CODE = r.Next(0, pokedex.Pokemons.Count);
                     PokemonPlus pc = pokedex.Pokemons[CODE];
                     Console.Clear();
-                    Console.WriteLine("   " + player.Nome +  "      |    ---------    |     " + pc.Nome + "  ");
+                    Console.WriteLine("   Player      |                 |      PC");
+                    Console.WriteLine("   " + player.Nome +  "      |    ---------    |  " + pc.Nome + "  ");
                     Console.WriteLine("Power: (" + player.Power + ")   |  --  Versus --  |  Power: (" + pc.Power + ")  ");
                     Console.WriteLine("Type: " + player.Tipo + "  |    ----------   |  Type: " + pc.Tipo + " ");
                     Console.WriteLine("");
