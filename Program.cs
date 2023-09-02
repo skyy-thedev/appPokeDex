@@ -13,6 +13,7 @@ namespace appPokeDex
         static void Main(string[] args)
         {
             Pokedex pokedex = new Pokedex();
+            Console.Clear();
             int choose = 100;
             while (choose != 0)
             {
@@ -34,6 +35,7 @@ namespace appPokeDex
                     Random r = new Random();
                     CODE = r.Next(0, pokedex.Pokemons.Count);
                     PokemonPlus pc = pokedex.Pokemons[CODE];
+                    Console.Clear();
                     Console.WriteLine(" | " + player.Nome + " | Power: (" + player.Power +")");
                     Console.WriteLine("          Versus        ");
                     Console.WriteLine(" | " + pc.Nome + " | Power: ("+ pc.Power +")");
